@@ -111,7 +111,6 @@ class SongHandler {
             const {
                 id
             } = request.params;
-
             await this._service.editSongById(id, request.payload);
 
             return {
